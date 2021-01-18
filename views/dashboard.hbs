@@ -1,0 +1,43 @@
+<h1 style="text-align:center; font-size:3rem; margin-top:40px;margin-bottom:50px;">Dashboard</h1>
+
+<div class="container">
+    
+    <a href="/users/logout" class="btn btn-primary mb-2">Logout</a>
+  
+      <table class="table" style="margin-top: 30px;">
+        <thead>
+            <tr>
+
+                <th scope="col">Date</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Query</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each msg}}
+            <tr>
+
+                <td>{{date}}</td>
+                <td>{{name}}</td>
+                <td>{{email}}</td>
+                <td>{{phone}}</td>
+                <td>{{query}}</td>
+
+                <td>
+
+                    <form action="/dashboard/{{this._id}}?_method=DELETE" method="POST">
+                       <button class="btn btn-danger mb-2">Delete</button>
+                    </form>
+                </td>
+
+
+            </tr>
+            {{/each}}
+
+        </tbody>
+    </table>
+
+
+</div>
