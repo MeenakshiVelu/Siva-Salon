@@ -8,12 +8,14 @@
 body{
     background-color: cornsilk;
     width:100vw;;
-    
+    height: 100vh;
+    overflow-x: hidden;
 }
 /* html{
     position: relative;
 
 } */
+
 
 .navbarme{
     background-color: rgb(12, 11, 11);
@@ -32,6 +34,7 @@ body{
 .brand-name{
     font-size: 1.5rem;
     margin: .5rem;
+    margin-left: 10px;
 }
 
 
@@ -40,6 +43,7 @@ body{
     display: flex;
     margin: 0;
     padding: 0;
+    margin-right: 20px;
 }
 .navlinksme li {
     list-style: none;
@@ -140,7 +144,7 @@ body{
 }
 
 .card-body{
-    background-image: linear-gradient(red, purple);
+    background-image: linear-gradient(rgb(30, 168, 60), rgb(35, 112, 126));
 }
 .container{
     /* height: 100vh; */
